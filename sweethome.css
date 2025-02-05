@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+html, body {
+    height: 100%; /* Faz o corpo ocupar toda a altura da tela */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1;
+}
+header{
+    box-shadow: 0em 0em 1em 0em #DBDFE2;
+}
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em 0;
+}
+h1 a{
+    font-family: "Julius Sans One", serif;
+    font-weight: 200;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    text-decoration: none;
+    color: #292929;
+}
+h2{
+    font-family: "Julius Sans One", serif;
+    color: #259B9F;
+    margin: 3em 0 1.5em 0;
+}
+nav ul{
+    list-style-type: none;
+    display: inline-flex;
+    gap: 2em;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: "Poppins", serif;
+    color: #292929;
+    font-size: 1.03em;
+}
+header div, #anuncios, main.cadastro, footer p, main.edicao, .main-reserva{
+    width: 70em;
+    margin: 0 auto;
+}
+footer{
+    background-color: #F1F1F1;
+    font-family: "Poppins";
+    color: #363636;
+    padding: 1.2em 0;
+    margin-top: 5em;
+    /* position: absolute;
+    bottom: 0;
+    width: 100%; */
+}
+section.destaque img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* anuncios: */
+div.anuncio{
+    /* border: 2px solid #259B9F; */
+    padding: 1.5em 2em;
+    box-shadow: 0em 0em 0.7em 0em #a4a4a456;
+    font-family: "Poppins";
+    background-color: #fdfdfd;
+}
+div.anuncio div.pai{
+    display: flex;
+    justify-content: space-between;
+}
+.anuncio-titulo, .anuncio-preco{
+    color: #4E4E4E;
+    font-weight: 600;
+}
+.anuncio-localizacao{
+    color: #7D7D7D;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.anuncio-descricao{
+    color: #646464;
+    margin: 1em 0;
+}
+.anuncios-lista{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.btn-editar, .btn-excluir, .btn-alugar{
+    background-color: #259B9F;
+    box-shadow: 0em 0em 0.4em 0em #DBDFE2;
+    padding: 0.3em 1em;
+    color: white;
+    font-family: "Poppins";
+    text-decoration: none;
+}
+.btn-editar:hover, .btn-excluir:hover, .btn-alugar:hover{
+    background-color: #125466;
+}
+.botoes-anuncio{
+    text-align: end;
+}
+main.main-edicao {
+    width: 70em;
+    margin: 0 auto;
+}
+
+/* cadastro: */
+label{
+    color: #707070;
+    font-family: "Poppins";
+}
+::placeholder{
+    font-family: "Poppins";
+    color: #A0A0A0;
+}
+input, textarea{
+    border: 2px solid #259B9F;
+    box-shadow: 0em 0em 0.4em 0em #DBDFE2;
+    padding: 0.6em 1em;
+    width: -webkit-fill-available;
+    font-family: "Poppins";
+}
+.cadastro-form{
+    display: grid;
+    grid-template-areas:
+    "one two three"
+    "four four four"
+    "button button button";
+    gap: 1.5em;
+}
+.cadastro-form div:nth-child(1){grid-area: one;}
+.cadastro-form div:nth-child(2){grid-area: two;}
+.cadastro-form div:nth-child(3){grid-area: three;}
+.cadastro-form div:nth-child(4){grid-area: four;}
+.cadastro-form button{grid-area: button;}
+.button-cadastro, .btn-confirm-aluguel, .button-salvar{
+    background-color: #259B9F;
+    color: white;
+    font-family: "Poppins";
+    border: none;
+    font-size: 1em;
+    padding: 0.4em 0;
+}
+.button-cadastro:hover, .btn-confirm-aluguel:hover, .button-salvar:hover{
+    cursor: pointer;
+    background-color: #125466;
+}
+p.cadastro, p.reserva{
+    font-family: "Poppins";
+    color: #363636;
+    margin-bottom: 2em;
+}
+main.cadastro h2, .main-reserva h2{
+    margin-top: 3em;
+    margin-bottom: 0;
+}
+.reserva-form, .editar_reserva{
+    display: grid;
+    grid-template-areas:
+    "one two"
+    "button button";
+    gap: 1.5em;
+    margin-top: 1.5em;
+}
+.reserva-form div:nth-child(1), .editar_reserva div:nth-child(1){grid-area: one;}
+.reserva-form div:nth-child(2), .editar_reserva div:nth-child(1){grid-area: two;}
+.reserva-form button, .editar_reserva button{grid-area: button;}
+.detalhes-casa .p, #editar_reserva .p{
+    font-family: "Poppins";
+    color: #707070;
+    font-size: 1.05em;
+    margin-bottom: 2px;
+}
+input[type="date"] {
+    font-family: "Poppins";
+}
+    /*MINHAS RESERVAS*/
+/* Seção de reservas */
+#reservas {
+	font-family:"Poppins";
+}
+.reserva-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #259B9F;
+    color: white;
+    padding: 10px;
+}
+/* Cartão de reserva */
+.reserva-card {
+	/* border: 2px solid #259B9F; */
+    /*padding: 1.5em 2em;*/
+	margin-bottom: 2em;
+    box-shadow: 0em 0em 0.7em 0em #a4a4a456;
+    font-family: "Poppins";
+    background-color: #fdfdfd;
+}
+section#reservas {
+    width: 70em;
+    margin: 0 auto;
+}
+.botoes_acoes button {
+    background: none;
+    text-decoration: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+	margin-right:1em;
+	font-family:"Poppins";
+}
+.botoes_acoes {
+    border-left: 1px solid white;
+    padding-left: 1.5em;
+}
+.info_reserva {
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+.titulo_loca_descri h3 {
+    color: #4E4E4E;
+    font-weight: 600;
+}
+.titulo_loca_descri p{
+	color:#646464;
+	margin-bottom:1em;
+}
+.preco_noite {
+    display: flex;
+	color:#4E4E4E;
+}
+p.preco {
+    font-weight: bold;
+}
+/*Editar reserva*/
+section#editar_reserva {
+    margin: 0 auto;
+    width: 70em;
+}
+
+button.button-salvar {
+    margin-top: 1em;
+    padding: 0.5em;
+	cursor:pointer;
+}
+/*##################*/
+.titulo_loca_descri p {
+    color: #646464;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.dia_inicio_fim {
+    display: flex;
+    gap: 8em;
+    justify-content: center;
+    align-items: center;
+}
