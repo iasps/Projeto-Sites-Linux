@@ -1,7 +1,7 @@
 /*M!999999\- enable the sandbox mode */ 
 -- MariaDB dump 10.19  Distrib 10.5.26-MariaDB, for debian-linux-gnu (x86_64)
 --
--- Host: localhost    Database: sweethome
+-- Host: 104.40.55.51    Database: sweethome
 -- ------------------------------------------------------
 -- Server version	10.5.26-MariaDB-0+deb11u2
 
